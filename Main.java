@@ -37,6 +37,10 @@ public class Main {
 		System.out.println(english.countStudents());
 		english.enroll(students);
 		System.out.println(english.countStudents());
+		System.out.println(english.averageGrade());
+		
+		System.out.println(math.aboveAverage(isaac));
+		System.out.println(math.aboveAverage(oscar));
 		
 		
 		

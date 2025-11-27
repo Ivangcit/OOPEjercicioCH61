@@ -44,7 +44,7 @@ public class Course {
 	public int countStudents() {
 		// TODO implement
 		return enrolledStudents.size();
-	}
+	}//countStudents
 
 	public int bestGrade() {
 		// TODO implement
@@ -57,6 +57,24 @@ public class Course {
 			}
 		}
 		return bG;
+	}//bestGrade
+	
+	public int averageGrade() {
+		int aG = 0;
+		
+		for (int i = 0; i < countStudents(); i++) {
+			aG=aG+enrolledStudents.get(i).grade;
+		}
+		return (aG/countStudents());
+	}//averageGrade
+	
+	public boolean aboveAverage(Student student) {
+		int average=this.averageGrade();
+		int studentGrade=student.grade;
+		
+		
+		return (studentGrade>average);
 	}
+	
 
 }// class Course
