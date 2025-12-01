@@ -7,6 +7,9 @@ public class Student {
 	int year;
 
 	// Constructores
+	
+	
+	
 	public Student(String firstName, String lastName, int registration, int grade, int year) {
 
 		this.firstName = firstName.toUpperCase();
@@ -45,7 +48,7 @@ public class Student {
 
 		if (isApproved()) {
 			this.year++;
-			System.out.println("Congragulations");
+			System.out.println("Congratulations");
 		}
 
 		return year;
